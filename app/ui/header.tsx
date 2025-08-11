@@ -22,9 +22,12 @@ export const Header = ({ userId }: Props) => {
 
         <div className="flex items-center gap-10">
           {!userId && (
-            <button className="m-0 p-0 flex items-center gap-1 cursor-pointer">
+            <Link
+              href="/login"
+              className="flex items-center gap-1 cursor-pointer"
+            >
               Log in <FaArrowRight />
-            </button>
+            </Link>
           )}
 
           {userId && (
