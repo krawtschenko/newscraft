@@ -1,11 +1,38 @@
+"use client";
+
 import { Container } from "@/app/ui/container";
+// import {
+//   createUserWithEmailAndPassword,
+//   onAuthStateChanged,
+//   signOut,
+// } from "firebase/auth";
+// import { auth } from "@/firebase";
 
 export default function Home() {
-  return (
-    <Container>
-      <h1 className="text-3xl text-red-500 font-bold underline">
-        Hello world!
-      </h1>
-    </Container>
-  );
+  // const registerUser = async (email: string, password: string) => {
+  //   try {
+  //     const userCredential = await createUserWithEmailAndPassword(
+  //       auth,
+  //       email,
+  //       password,
+  //     );
+  //     console.log("User registered:", userCredential.user);
+  //   } catch (error: any) {
+  //     console.error(error.message);
+  //   }
+  // };
+  //
+  // const logoutUser = async () => {
+  //   await signOut(auth);
+  // };
+  //
+  // onAuthStateChanged(auth, (user) => {
+  //   if (user) {
+  //     console.log("Logged in as:", user.email);
+  //   } else {
+  //     console.log("Not logged in");
+  //   }
+  // });
+
+  return <Container>hello</Container>;
 }
